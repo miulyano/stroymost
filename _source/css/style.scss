@@ -5,18 +5,6 @@
 @import "block/system/layouts";  //базовые стили сетки
 
 //стили блоков - главная
-@import "block/html/main/header";
-@import "block/html/main/main";
-@import "block/html/main/footer";
-@import "block/html/main/modal";
+
 
 //стили блоков - внутренние страницы
-@import "block/html/inner-page";//переопределение основных стилей для внутренних страниц
-@import "block/html/services/services-item"; //страница услуги
-@import "block/html/about-company/about-company"; //страница о компании
-@import "block/html/contacts/contacts"; //страница контактов
-@import "block/html/news/news"; //страница новостей (грид)
-@import "block/html/news/news-item"; //страница новости
-@import "block/html/goods/goods"; //страница товаров (грид)
-@import "block/html/goods/goods-item"; //страница товара
-@import "block/html/object/object-item"; //страница объекта
