@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><defs><style>.cls-1{fill:#14aae0;}.cls-2{fill:#fff;}</style></defs><title>Ресурс 6</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Z"/><path class="cls-2" d="M15,9.51,10.5,14,7,10.51,8.5,9l2,2,3-3Z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+	<g id="mark">
+		<g>
+			<path fill="#14aae0" d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Z"/>
+			<path fill="#fff" d="M15,9.51,10.5,14,7,10.51,8.5,9l2,2,3-3Z"/>
+		</g>
+	</g>
+</svg>

@@ -1,14 +1,10 @@
 doctype html
 html(lang='ru')
   head
-    title Jade
+    include pages/components/head.pug
+    title ИК Строймост - Строительство и строительная экспертиза
   body
-    h1 Jade - node template engine
+    header Jade - node template engine
     #container.col
-      p You are amazing
-      p
-        | Jade is a terse and simple
-        | templating language with a
-        | strong focus on performance
-        | and powerful features.
-        include pages/components/header.pug
+    main You are amazing
+    footer Jade is a terse and simple
