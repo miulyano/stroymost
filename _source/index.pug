@@ -2,10 +2,10 @@ doctype html
 html(lang='ru')
   head
     include pages/components/head.pug
-    title ИК Строймост - Строительство и строительная экспертиза
+    title ИК Строймост &#149; Главная
   body.body
-    header
-      h1 Jade - node template engine
-    #container.col
-    main You are amazing
-    footer Jade is a terse and simple
+    include pages/components/svg-sprite.pug
+    header.header-index
+      include pages/components/header/header-index.pug
+    main
+    footer

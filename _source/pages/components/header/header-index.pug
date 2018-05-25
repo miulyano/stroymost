@@ -1,0 +1,37 @@
+div.block-container
+  img(src="img/index/logo.png")
+  section.header-index__company-info
+    h1.header-index__company-info_heading ООО «ИК Строймост»
+    div
+      div
+        button
+          svg
+            use(xlink:href='#search')
+        form(action="/")
+          input(type="search")
+          button(type="submit")
+      div
+        p Звонки по всей России бесплатно
+        a(href="tel:88004556699") 8 (800) 455 66 99
+  p Строительство и строительная экспертиза
+  h2 Строительство и строительная экспертиза
+  p Наш подход такой, как на Западе – через понятные презентации и образы, постоянное взаимодействие и четко отлаженные бизнес-процессы. Мы решаем ваши задачи и говорим с вами на вашем языке
+  section
+    div
+     div
+       svg(width="150" height="150")
+         use(xlink:href='#geodesy')
+     p Геодезическое сопровождение
+    div
+      div
+        svg
+          use(xlink:href='#building')
+      p Обследование зданий и сооружений
+    div
+      div
+        svg
+          use(xlink:href='#peoples')
+      p Строительный контроль
+
+
+include ../menu.pug

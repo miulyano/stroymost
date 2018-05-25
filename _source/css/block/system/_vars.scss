@@ -1,30 +1,28 @@
 //Typography
-$default-font:                    Lato, Arial, Roboto, Helvetica, sans-serif;
+$-default-font:                    Lato, Arial, Roboto, Helvetica, sans-serif;
 
 //Colors
-$heading-bg-color:                #171b57;
-$active-color:                    #1aaf8e;
-$dropdown-color:                  #171b57;
-$list-hover:                      #088368;
-$ul-list-color:                   rgb(25, 148, 132);
-$text-white:                      #ffffff;
-$text-black:                      #000000;
-$border-color:                    #f2f4f5;
-$button-color:                    #199484;
-$placeholder-color:               #b5b5b5;
-$placeholder-hover-color:         #4d4946;
-$input--border-color:             #dddddd;
+$-active--color:                  #13aae0;
+$-add-button--color:              #9abbca;
+$-black--color:                   #000000;
+$-gray-light--color:              #c9c9c9;
+$-gray-medium--color:             #b7b7b7;
+$-white--color:                   #ffffff;
+$-border-light--color:            #ebebeb;
+$-border-dark--color:             #b7b7b7;
+$-background--light-blue--color:  #e4eff4;
+$-placeholder--color:             #6c6c6c;
+$-underlining--color:             #c7cfd2;
+$-input-border--color:            #e1e1e1;
 
 //Font size
-$h1-font_size:                    40px;
-$section-heading-size:            30px;
-$base-font_size:                  16px;
-$aside-font_size:                 17px;
-$label-font_size-sm:              12px;
-$button-font_size:                13px;
-$label-font_size-normal:          14px;
-$label-font_size-lg:              21px;
-$label-contact:                   20px;
+$-menu--font_size:                 25px;
+$-default--font_size:              16px;
+$-default--font_size:              16px;
+$-heading-xl--font_size:           54px;
+$-heading-lg--font_size:           50px;
+$-heading-md--font_size:           46px;
+$-heading-sm--font_size:           32px;
 
 //Customization Bootstrap vars
 $grid-gutter-width:               30px;
@@ -47,22 +45,22 @@ $gutter:                          $grid-gutter-width;
 
 
 //mix--$active-color
-$--active-color-darken-05: mix($text-black, $active-color, 5%) !default;
-$--active-color-darken-10: mix($text-black, $active-color, 10%) !default;
-$--active-color-darken-15: mix($text-black, $active-color, 15%) !default;
-$--active-color-darken-20: mix($text-black, $active-color, 20%) !default;
-$--active-color-darken-25: mix($text-black, $active-color, 25%) !default;
-$--active-color-darken-30: mix($text-black, $active-color, 30%) !default;
-$--active-color-darken-35: mix($text-black, $active-color, 35%) !default;
-$--active-color-darken-40: mix($text-black, $active-color, 40%) !default;
-$--active-color-darken-45: mix($text-black, $active-color, 45%) !default;
-$--active-color-darken-50: mix($text-black, $active-color, 50%) !default;
-$--active-color-darken-55: mix($text-black, $active-color, 55%) !default;
-$--active-color-darken-60: mix($text-black, $active-color, 60%) !default;
-$--active-color-darken-65: mix($text-black, $active-color, 65%) !default;
-$--active-color-darken-70: mix($text-black, $active-color, 70%) !default;
-$--active-color-darken-75: mix($text-black, $active-color, 75%) !default;
-$--active-color-darken-80: mix($text-black, $active-color, 80%) !default;
-$--active-color-darken-85: mix($text-black, $active-color, 85%) !default;
-$--active-color-darken-90: mix($text-black, $active-color, 90%) !default;
-$--active-color-darken-95: mix($text-black, $active-color, 95%) !default;
+$--active-color-darken-05: mix($-black--color, $-active--color, 5%) !default;
+$--active-color-darken-10: mix($-black--color, $-active--color, 10%) !default;
+$--active-color-darken-15: mix($-black--color, $-active--color, 15%) !default;
+$--active-color-darken-20: mix($-black--color, $-active--color, 20%) !default;
+$--active-color-darken-25: mix($-black--color, $-active--color, 25%) !default;
+$--active-color-darken-30: mix($-black--color, $-active--color, 30%) !default;
+$--active-color-darken-35: mix($-black--color, $-active--color, 35%) !default;
+$--active-color-darken-40: mix($-black--color, $-active--color, 40%) !default;
+$--active-color-darken-45: mix($-black--color, $-active--color, 45%) !default;
+$--active-color-darken-50: mix($-black--color, $-active--color, 50%) !default;
+$--active-color-darken-55: mix($-black--color, $-active--color, 55%) !default;
+$--active-color-darken-60: mix($-black--color, $-active--color, 60%) !default;
+$--active-color-darken-65: mix($-black--color, $-active--color, 65%) !default;
+$--active-color-darken-70: mix($-black--color, $-active--color, 70%) !default;
+$--active-color-darken-75: mix($-black--color, $-active--color, 75%) !default;
+$--active-color-darken-80: mix($-black--color, $-active--color, 80%) !default;
+$--active-color-darken-85: mix($-black--color, $-active--color, 85%) !default;
+$--active-color-darken-90: mix($-black--color, $-active--color, 90%) !default;
+$--active-color-darken-95: mix($-black--color, $-active--color, 95%) !default;

@@ -1,11 +1,14 @@
 html, body {
   height: 100%;
+  min-height: 100vh;
   min-width: 320px;
+  font-family: $-default-font;
+  color: $-black--color;
 }
 
 *::selection {
-  color: $text-white;
-  background-color: $dropdown-color;
+  color: $-white--color;
+  background-color: $-active--color;
 }
 
 input:focus,
@@ -28,39 +31,9 @@ ul, li {
   padding: 0;
 }
 
-.button {
-  padding: 19px 20px;
-  display: inline-block;
-  background-color: $active-color;
-  color: $text-white;
-  text-transform: uppercase;
-  line-height: $label-font_size-sm;
-  font-size: $button-font_size;
-  letter-spacing: 1.7px;
-  font-weight: 900;
-  border-radius: 3px;
-  border: 0;
-  cursor: pointer;
-  transition: background-color .2s ease-in-out;
-}
-
-.button-lg {
-  padding: 27px 46px;
-  display: inline-block;
-  background-color: $active-color;
-  color: $text-white;
-  text-transform: uppercase;
-  line-height: $label-font_size-sm;
-  font-size: $label-font_size-normal;
-  letter-spacing: 1.6px;
-  font-weight: 900;
-  border-radius: 3px;
-  border: 0;
-  cursor: pointer;
-  transition: background-color .2s ease-in-out;
-}
-
-.main-section {
-  padding-top: 30px;
+.block-container,
+.menu {
+  margin: 0 auto;
+  @include  make-container-max-widths()
 }
 
