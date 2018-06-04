@@ -1,0 +1,37 @@
+.projects-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 527px;
+  background-color: #e6e4ca;
+  background-image: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.2)), url('../../../img/index/content/school.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto auto;
+  &__heading {
+    margin-bottom: 50px;
+    font-size: $-heading-xl--font_size;
+    line-height: 58px;
+    font-weight: 700;
+    color: $-white--color;
+  }
+  &__date {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: $-white--color;
+    font-weight: 400;
+  }
+  &__subheading {
+    font-size: $-heading-lg--font_size;
+    line-height: $-heading-lg--font_size;
+    color: $-white--color;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 25px;
+    max-width: 630px;
+    font-size: 20px;
+    line-height: 32px;
+    color: $-white--color;
+    font-weight: 400;
+  }
+}

@@ -7,5 +7,18 @@ html(lang='ru')
     include pages/components/svg-sprite.pug
     header.header-index
       include pages/components/header/header-index.pug
-    main
+    main.main__block
+      include pages/components/aerial_photography.pug
+      include pages/components/projects.pug
+      include pages/components/news.pug
+      include pages/components/certificates.pug
+      include pages/components/customers.pug
     footer
+      include pages/components/card.pug
+      include pages/components/footer/footer-index.pug
+    script(src='module/jquery-3.3.1.min/index.js')
+    script(src='module/owl.carousel.min.js')
+    script(src='module/jquery.maskedinput.min.js')
+    script(src='module/init-carusel.js')
+    script(src='js/bundle.min.js')
+    link(rel='stylesheet', href='css/js-style.css')

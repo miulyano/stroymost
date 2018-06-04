@@ -1,0 +1,96 @@
+.aerial-photography {
+  padding-top: 120px;
+  padding-bottom: 93px;
+  &__info-wrapper {
+    position: relative;
+    display: flex;
+  }
+  &__info {
+    position: relative;
+    max-width: 715px;
+    z-index: 10;
+  }
+  &__info-title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: $-gray--color;
+  }
+  &__info-heading {
+    margin-bottom: 18px;
+    font-size: $-heading-xl--font_size;
+    line-height: $-heading-xl--font_size;
+    color: $-active--color;
+  }
+  &__info-text {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 32px;
+    color: $-black--color;
+  }
+  &__foto img {
+    position: absolute;
+    top: -37px;
+    right: -253px;
+    min-width: 772px;
+  }
+  &__form {
+    position: relative;
+    z-index: 10;
+  }
+  &__form_wrapper {
+    display: flex;
+    margin-bottom: 17px;
+  }
+  &__form_item {
+    width: 272px;
+    padding: 25px 30px;
+    font-size: $-default--font_size;
+    line-height: $-default--font_size;
+    border-radius: 3px;
+  }
+  &__form_item::placeholder {
+    color: $-black--color;
+    transition: color .2s ease-in-out;
+  }
+  &__form_item:hover::placeholder,
+  &__form_item:focus::placeholder {
+    color: $-gray-medium--color;
+  }
+  &__form_item:not(:last-child) {
+    margin-right: 23px;
+    border: 1px solid $-input-border--color;
+  }
+  &__form_checkbox-label {
+    position: relative;
+    margin-left: 35px;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+  &__form_checkbox-label::before {
+    content: '';
+    top: -3px;
+    left: -35px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $-border-dark--color;
+    border-radius: 2px;
+  }
+  &__form_checkbox-label::after {
+    content: '';
+    display: none;
+    top: 6px;
+    left: -28px;
+    position: absolute;
+    width: 11px;
+    height: 8px;
+    background-image: url('../img/style/checkbox-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  &__form_checkbox:checked + &__form_checkbox-label::after {
+    display: block;
+  }
+}

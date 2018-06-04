@@ -1,0 +1,87 @@
+.customers {
+  padding: 60px 0 55px;
+  background-color: $-background--light-blue--color;
+  &__heading {
+    margin-bottom: 22px;
+    font-size: $-heading-xl--font_size;
+    line-height: $-heading-xl--font_size;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 0;
+    max-width: 680px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  &__block {
+    display: flex;
+  }
+  &__block_item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: 188px;
+    height: 188px;
+    background-color: $-white--color;
+    transition: box-shadow .2s ease-in-out;
+  }
+  &__block_item-logo {
+    max-width: 120px;
+  }
+  &__block_item:hover {
+    box-shadow: 0px 5px 9.9px 8.1px rgba(10, 109, 168, 0.1);
+  }
+  &__tooltip {
+    display: none;
+    justify-content: flex-start;
+    position: absolute;
+    top: -490px;
+    left: 0;
+    padding: 70px;
+    background-color: $-white--color;
+    box-shadow: 0px 16px 28.05px 22.95px rgba(0, 0, 0, 0.04);
+    z-index: 500;
+    animation: viewTooltip .2s ease-in-out;
+    animation-direction: reverse;
+  }
+  @keyframes viewTooltip {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  &__tooltip_gratitude img {
+    max-width: 243px;
+  }
+  &__tooltip_info {
+    margin-left: 45px;
+    width: 510px;
+  }
+  &__tooltip_info-heading {
+    margin-bottom: 15px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  &__tooltip_info-text {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__tooltip_info-logo {
+    margin-bottom: 12px;
+    width: auto;
+    max-height: 80px;
+  }
+  .owl-carousel .owl-item img {
+    width: auto;
+  }
+}
+
+.customers__block_item:hover .customers__tooltip {
+  display: flex;
+}

@@ -1,9 +1,17 @@
 @import "block/system/bootstrap";  //подключение сетки Bootstrap-4
+@import "block/system/fonts";  //подключение шрифтов
 @import "block/system/vars";  //переменные проекта
 @import "block/system/base";  //глобальные классы и классы для примесей
+@import "block/system/buttons";  //стили кнопок
+@import "block/system/owl-carusel";  //стили карусели
 
-
-//стили блоков - главная
-
-
-//стили блоков - внутренние страницы
+//стили компонентов
+@import "block/components/header-index"; //шапка на главной
+@import "block/components/menu"; //меню
+@import "block/components/aerial_photography"; //блок с формой подарка
+@import "block/components/projects"; //блок проектов
+@import "block/components/news"; //блок новостей
+@import "block/components/certificates"; //блок сертификатов
+@import "block/components/customers"; //блок клиентов
+@import "block/components/card"; //блок контактов
+@import "block/components/footer-index"; //блок футера

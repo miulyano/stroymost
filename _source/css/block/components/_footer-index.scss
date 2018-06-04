@@ -1,0 +1,40 @@
+.footer {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__info_logo {
+    width: 137px;
+  }
+  &__info_text {
+    margin-left: 25px;
+  }
+  &__info_text-heading {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+  &__info_text-title {
+    margin-bottom: 0;
+    font-size: $-default--font_size;
+    line-height: $-default--font_size;
+  }
+  &__tel_title {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  &__tel_value {
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: 700;
+    color: $-black--color;
+  }
+  &__tel_value:hover {
+    color: $-black--color;
+  }
+}

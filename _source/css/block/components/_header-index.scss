@@ -1,0 +1,168 @@
+.header-index {
+  position: relative;
+  padding-top: 85px;
+  min-height: 833px;
+  background-color: #b1b1b1;
+  background-image: url('../../../img/index/content/header-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  .block-container {
+    position: relative;
+  }
+  .header-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    position: absolute;
+    top: -33px;
+    left: -138px;
+    max-width: 555px;
+  }
+  &__company-info {
+    margin-left: 280px;
+    position: relative;
+    vertical-align: bottom;
+    z-index: 10;
+  }
+  &__company-info_heading {
+    margin-right: 100px;
+    margin-bottom: 0;
+    font-size: $-heading-md--font_size;
+    line-height: $-heading-md--font_size;
+    color: $-white--color;
+    font-weight: bold;
+  }
+  &__company-info,
+  &__company-info_wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__company-info_search {
+    position: relative;
+    z-index: 20;
+  }
+  &__company-info_search-active {
+    margin-right: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+  &__company-info_search-form {
+    display: none;
+    position: absolute;
+    left: 8px;
+    bottom: -50px;
+  }
+  &__company-info_search-input {
+    padding: 8px 20px;
+    width: 264px;
+    border-radius: 50px;
+    font-size: $-default--font_size;
+    border: none;
+  }
+  &__company-info_tel-info {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: $-white--color;
+  }
+  &__company-info_tel {
+    font-size: 28px;
+    line-height: 28px;
+    color: $-white--color;
+  }
+  &__company-info_tel:hover {
+    color: $-white--color;
+  }
+  &__sub-heading {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 280px;
+    margin-bottom: 0;
+    width: 320px;
+    font-size: $-default--font_size;
+    color: $-white--color;
+    z-index: 10;
+  }
+  &__promo-heading,
+  &__promo-text {
+    position: relative;
+    color: $-white--color;
+    text-align: center;
+    z-index: 10;
+  }
+  &__promo-heading {
+    margin-top: 78px;
+    align-self: center;
+    max-width: 740px;
+    font-size: $-heading-lg--font_size;
+    font-weight: bold;
+    line-height: 52px;
+    text-shadow: 0 4px 20px rgba(0,0,0,.16);
+  }
+  &__promo-text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: center;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 775px;
+    word-wrap: break-word;
+    text-shadow: 0 4px 20px rgba(0,0,0,.3);
+    hyphens: auto;
+  }
+  &__services {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+  &__services_item {
+    display: flex;
+    align-items: center;
+  }
+  &__services_item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__services_item-description {
+    margin-bottom: 0;
+    font-size: $-default--font_size;
+    line-height: 20px;
+    color: $-white--color;
+  }
+  &__services_item-image {
+    display: inline-block;
+    max-height: 100%;
+  }
+  .geodesy {
+    height: 62px;
+    width: 61px;
+  }
+  .building {
+    height: 55px;
+    width: 63px;
+  }
+  .peoples {
+    height: 58px;
+    width: 60px;
+  }
+  .geodesy,
+  .building,
+  .peoples {
+    margin-right: 20px;
+  }
+  &__link-more {
+    align-self: center;
+    position: relative;
+    z-index: 10;
+  }
+}

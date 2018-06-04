@@ -1,0 +1,44 @@
+.contacts {
+  &__card {
+    height: 590px;
+    background-color: #fbf5e4;
+    z-index: -1;
+  }
+  &__block {
+    position: relative;
+    bottom: -510px;
+    padding: 40px;
+    width: 397px;
+    background-color: $-white--color;
+    box-shadow: 0px 16px 28.05px 22.95px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+  }
+  &__block_heading {
+    margin-bottom: 39px;
+    font-size: 41px;
+    line-height: 41px;
+  }
+  &__block_item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__block_item-name {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  &__block_item-value {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $-black--color;
+  }
+  &__block_item-value:hover {
+    color: $-black--color;
+  }
+}
+
+.main__block {
+  position: relative;
+  margin-bottom: -429px;
+  z-index: 10;
+}

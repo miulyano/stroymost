@@ -1,0 +1,33 @@
+.certificates {
+  padding: 60px 0;
+  &__heading {
+    margin-bottom: 22px;
+    font-size: $-heading-xl--font_size;
+    line-height: $-heading-xl--font_size;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 35px;
+    max-width: 680px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block_item {
+    width: 255px;
+    padding: 27px;
+    border: 3px solid $-border-light--color;
+    cursor: pointer;
+    img {
+      transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    }
+  }
+  &__block_item:hover img {
+    opacity: .9;
+    transform: scale(1.03);
+  }
+}

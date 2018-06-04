@@ -1,0 +1,65 @@
+.button {
+  display: inline-block;
+  font-size: $-default--font_size;
+  line-height: $-default--font_size;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-radius {
+  border-radius: 50px;
+  padding: 20px 50px;
+}
+
+.button__filled_blue {
+  background-color: $-active--color;
+  color: $-white--color;
+  transition: transform .1s ease-in-out, background-color .15s ease-in-out;
+}
+
+.button__filled_blue:hover {
+  color: $-white--color;
+}
+
+.button__filled_blue:active {
+  background-color: $--active-color-darken-15;
+}
+
+.button__empty_white {
+  color: $-white--color;
+  border: 1px solid $-white--color;
+  transition: transform .1s ease-in-out, background-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.button__empty_white:hover {
+  color: $-gray--color;
+  background-color: $-white--color;
+}
+
+.button__blue-border {
+  background-color: $-white--color;
+  color: $-black--color;
+  transition: transform .1s ease-in-out;
+  border: 1px solid $-active--color;
+}
+
+.button__blue-border:hover {
+  color: $-gray--color;
+}
+
+.button:hover,
+.button:focus {
+  text-decoration: none;
+  transform: scale(1.03);
+}
+
+.button:active {
+  text-decoration: none;
+  transform: scale(.99);
+}
+
+.button:focus,
+.button:active {
+  outline: none;
+}

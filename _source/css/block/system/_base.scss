@@ -4,6 +4,7 @@ html, body {
   min-width: 320px;
   font-family: $-default-font;
   color: $-black--color;
+  overflow-x: hidden;
 }
 
 *::selection {
@@ -11,9 +12,11 @@ html, body {
   background-color: $-active--color;
 }
 
+a:focus,
 input:focus,
 button:focus {
-
+  box-shadow: 0 0 5px $-active--color;
+  outline: none;
 }
 
 .visually-hidden {
@@ -31,9 +34,12 @@ ul, li {
   padding: 0;
 }
 
+img, svg {
+  max-width: 100%;
+}
+
 .block-container,
-.menu {
+.menu__list {
   margin: 0 auto;
   @include  make-container-max-widths()
 }
-
