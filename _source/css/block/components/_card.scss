@@ -15,21 +15,29 @@
     background-color: $-white--color;
     box-shadow: 0px 16px 28.05px 22.95px rgba(0, 0, 0, 0.1);
     z-index: 500;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       display: flex;
       flex-direction: column;
       align-items: center;
       bottom: 0;
-      padding: 25px 0;
+      padding: 45px 0;
       width: 100%;
       box-shadow: none;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 25px 0;
     }
   }
   &__block_heading {
     margin-bottom: 39px;
     font-size: 41px;
     line-height: 41px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+    @include media-breakpoint-down(sm) {
       margin-bottom: 30px;
       font-size: 24px;
       line-height: 24px;
@@ -38,14 +46,17 @@
   &__block_item {
     display: flex;
     flex-direction: column;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       align-items: center;
     }
   }
   &__block_item-name {
     margin-bottom: 5px;
     font-size: 14px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 12px;
+    }
+    @include media-breakpoint-down(sm) {
       margin-bottom: 9px;
     }
   }
@@ -54,12 +65,26 @@
     font-size: 20px;
     font-weight: 500;
     color: $-black--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px;
       font-size: 18px;
+      text-align: center;
     }
   }
   &__block_item-value:hover {
     color: $-black--color;
+  }
+  .button {
+    @include media-breakpoint-down(md) {
+      margin-top: 15px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -67,7 +92,7 @@
   position: relative;
   margin-bottom: -429px;
   z-index: 10;
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(md) {
     margin-bottom: 0;
   }
 }

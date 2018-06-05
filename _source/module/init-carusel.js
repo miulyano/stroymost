@@ -36,6 +36,11 @@ $('.certificates-carusel').owlCarousel({
   margin: 0,
   responsive: {
     0: {
+      items: 1.1,
+      dots: true,
+      nav: false
+    },
+    321: {
       items: 1.2,
       dots: true,
       nav: false
@@ -52,7 +57,7 @@ $('.certificates-carusel').owlCarousel({
     },
     575: {
       items: 2,
-      dots: false,
+      dots: true,
       nav: true
     },
     768: {
@@ -82,6 +87,9 @@ $('.customers-carusel').owlCarousel({
   dots: false,
   responsive: {
     0: {
+      items: 1.6
+    },
+    321: {
       items: 1.9
     },
     430: {

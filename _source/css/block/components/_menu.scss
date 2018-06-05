@@ -1,7 +1,7 @@
 .menu {
   border-top: 1px solid $-border-dark--color;
   border-bottom: 1px solid $-border-dark--color;
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
   &__list {
     display: flex;
     list-style: none;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       flex-direction: column;
     }
   }
@@ -27,7 +27,7 @@
       width: 16px;
       height: 16px;
     }
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: flex;
       line-height: 60px;
       align-items: center;
@@ -57,7 +57,11 @@
     height: 34px;
     width: 1px;
     background-color: $-border-dark--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      top: 16px;
+      height: 25px;
+    }
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
@@ -70,7 +74,11 @@
     font-size: $-menu--font_size;
     font-weight: 700;
     transition: opacity .2s ease-in-out;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      padding: 15px 0;
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(sm) {
       font-size: 25px;
       line-height: 60px;
       padding: 0;

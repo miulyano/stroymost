@@ -1,14 +1,17 @@
 .news {
   padding: 60px 0;
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     padding: 30px 0;
   }
   &__heading {
     margin-bottom: 35px;
     font-size: $-heading-xl--font_size;
     line-height: $-heading-xl--font_size;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
       margin-bottom: 25px;
+    }
+    @include media-breakpoint-down(sm) {
       font-size: 24px;
       line-height: 24px;
     }
@@ -21,15 +24,20 @@
     padding: 30px;
     border-radius: 3px;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       padding: 0;
       min-height: 231px;
+    }
+  }
+  .owl-item {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
     }
   }
   &__item:hover {
     background-color: $-active--color;
     color: $-white--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       background-color: $-white--color;
       color: $-black--color;
     }
@@ -37,7 +45,7 @@
   &__item_date {
     margin-bottom: 25px;
     font-size: 14px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-bottom: 15px;
     }
   }
@@ -46,7 +54,10 @@
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 28px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
+    @include media-breakpoint-down(md) {
       font-size: 24px;
       margin-bottom: 15px;
     }
@@ -56,20 +67,23 @@
     max-width: 320px;
     font-size: 20px;
     line-height: 32px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
+    @include media-breakpoint-down(sm) {
       max-width: 100%;
       font-size: 16px;
       line-height: 22px;
     }
   }
   .button {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       padding: 20px 30px;
       transition: background-color .2s ease-in-out, color .2s ease-in-out;
     }
   }
   .button:hover {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       transform: scale(1);
       background-color: $-active--color;
       color: $-white--color;

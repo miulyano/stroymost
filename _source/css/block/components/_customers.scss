@@ -1,7 +1,10 @@
 .customers {
   padding: 60px 0 55px;
   background-color: $-background--light-blue--color;
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(md) {
+    padding: 30px 0 25px;
+  }
+  @include media-breakpoint-down(sm) {
     padding: 38px 0 0;
   }
   &__heading {
@@ -9,7 +12,11 @@
     font-size: $-heading-xl--font_size;
     line-height: $-heading-xl--font_size;
     font-weight: 700;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    @include media-breakpoint-down(sm) {
       margin-bottom: 0;
       font-size: 24px;
       line-height: 24px;
@@ -21,7 +28,7 @@
     font-size: 22px;
     line-height: 32px;
     font-weight: 400;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
@@ -92,7 +99,7 @@
     width: auto;
   }
   .owl-nav {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       padding: 0 15px;
     }
   }

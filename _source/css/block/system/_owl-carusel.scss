@@ -23,7 +23,7 @@
     font-weight: 500!important;
     line-height: 23px!important;
   }
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     width: 50px;
     height: 50px;
   }
@@ -40,7 +40,7 @@
     top: -455px;
     color: $-white--color!important;
     border: 1px solid $-white--color!important;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       top: -512px;
       background-color: $-active--color!important;
       border: none!important;
@@ -62,7 +62,7 @@
     top: -433px;
     color: $-active--color!important;
     border: 1px solid $-icon-border--color!important;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       top: -295px;
       color: $-white--color!important;
       border: none!important;
@@ -77,13 +77,25 @@
   }
 }
 
+.news-carusel {
+  .owl-prev,
+  .owl-next {
+    @include media-breakpoint-down(md) {
+      top: -415px;
+    }
+  }
+}
+
 .certificates-carusel {
   .owl-prev,
   .owl-next {
     top: -525px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
+  }
+  .owl-dots {
+    margin-top: 7px;
   }
   .owl-dot {
     display: inline-block;

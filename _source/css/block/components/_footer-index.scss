@@ -3,10 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
   &__info {
     display: flex;
     align-items: center;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       justify-content: center;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -15,13 +18,13 @@
   }
   &__info_logo {
     width: 137px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       width: 80px;
     }
   }
   &__info_text {
     margin-left: 25px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-left: 15px;
     }
   }
@@ -29,22 +32,33 @@
     font-size: 38px;
     line-height: 38px;
     font-weight: 500;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-down(sm) {
       margin-bottom: 0;
       font-size: 22px;
       line-height: 22px;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 19px;
     }
   }
   &__info_text-title {
     margin-bottom: 0;
     font-size: $-default--font_size;
     line-height: $-default--font_size;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    @include media-breakpoint-down(sm) {
       font-size: 10px;
     }
   }
   &__tel {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
@@ -58,6 +72,10 @@
     line-height: 33px;
     font-weight: 700;
     color: $-black--color;
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
   &__tel_value:hover {
     color: $-black--color;

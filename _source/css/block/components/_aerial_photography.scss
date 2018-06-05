@@ -1,7 +1,10 @@
 .aerial-photography {
   padding-top: 120px;
   padding-bottom: 93px;
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(lg) {
+    padding: 60px 0;
+  }
+  @include media-breakpoint-down(sm) {
     padding-top: 30px;
     padding-bottom: 25px;
   }
@@ -21,7 +24,7 @@
     margin-bottom: 5px;
     font-size: 14px;
     color: $-gray--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       text-align: center;
     }
   }
@@ -30,7 +33,7 @@
     font-size: $-heading-xl--font_size;
     line-height: $-heading-xl--font_size;
     color: $-active--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-bottom: 12px;
       font-size: 30px;
       line-height: 37px;
@@ -42,7 +45,7 @@
     font-size: 20px;
     line-height: 32px;
     color: $-black--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-bottom: 25px;
       font-size: $-default--font_size;
       line-height: 22px;
@@ -57,7 +60,7 @@
     @include media-breakpoint-down(lg) {
       display: none;
     }
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
@@ -68,7 +71,7 @@
   &__form_wrapper {
     display: flex;
     margin-bottom: 17px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       flex-direction: column;
       margin-bottom: 0;
     }
@@ -79,7 +82,7 @@
     font-size: $-default--font_size;
     line-height: $-default--font_size;
     border-radius: 3px;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       width: 100%;
     }
   }
@@ -94,7 +97,7 @@
   &__form_item:not(:last-child) {
     margin-right: 23px;
     border: 1px solid $-input-border--color;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       margin-right: 0;
       margin-bottom: 13px;
     }
@@ -105,7 +108,7 @@
     font-size: 14px;
     line-height: 18px;
     cursor: pointer;
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
