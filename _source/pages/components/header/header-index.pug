@@ -1,7 +1,12 @@
 div.block-container.header-wrapper
+  button.menu__button
+    svg
+      use(xlink:href='#burger')
+    |Открыть меню
   img.header-index__logo(src="img/index/logo.png")
   section.header-index__company-info
     h1.header-index__company-info_heading ООО «ИК Строймост»
+    p.header-index__company-info_mobile-subheading Строительство и строительная экспертиза
     div.header-index__company-info_wrapper
       div.header-index__company-info_search
         button.header-index__company-info_search-active
@@ -13,6 +18,7 @@ div.block-container.header-wrapper
       div
         p.header-index__company-info_tel-info Звонки по всей России бесплатно
         a.header-index__company-info_tel(href="tel:88004556699") 8 (800) 455 66 99
+        p.header-index__company-info_tel_mobile-text Бесплатные звонки по РФ
   p.header-index__sub-heading Строительство и строительная экспертиза
   h2.header-index__promo-heading Строительство и строительная экспертиза
   p.header-index__promo-text Наш подход такой, как на Западе – через понятные презентации и образы, постоянное взаимодействие и четко отлаженные бизнес-процессы. Мы решаем ваши задачи и говорим с вами на вашем языке

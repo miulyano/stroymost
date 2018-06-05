@@ -6,22 +6,47 @@
   &__info {
     display: flex;
     align-items: center;
+    @include media-breakpoint-down(xs) {
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
   }
   &__info_logo {
     width: 137px;
+    @include media-breakpoint-down(xs) {
+      width: 80px;
+    }
   }
   &__info_text {
     margin-left: 25px;
+    @include media-breakpoint-down(xs) {
+      margin-left: 15px;
+    }
   }
   &__info_text-heading {
     font-size: 38px;
     line-height: 38px;
     font-weight: 500;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 0;
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
   &__info_text-title {
     margin-bottom: 0;
     font-size: $-default--font_size;
     line-height: $-default--font_size;
+    @include media-breakpoint-down(xs) {
+      font-size: 10px;
+    }
+  }
+  &__tel {
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
   }
   &__tel_title {
     margin-bottom: 8px;

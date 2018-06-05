@@ -1,11 +1,19 @@
 .customers {
   padding: 60px 0 55px;
   background-color: $-background--light-blue--color;
+  @include media-breakpoint-down(xs) {
+    padding: 38px 0 0;
+  }
   &__heading {
     margin-bottom: 22px;
     font-size: $-heading-xl--font_size;
     line-height: $-heading-xl--font_size;
     font-weight: 700;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 0;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
   &__text {
     margin-bottom: 0;
@@ -13,6 +21,9 @@
     font-size: 22px;
     line-height: 32px;
     font-weight: 400;
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
   }
   &__block {
     display: flex;
@@ -80,8 +91,16 @@
   .owl-carousel .owl-item img {
     width: auto;
   }
+  .owl-nav {
+    @include media-breakpoint-down(xs) {
+      padding: 0 15px;
+    }
+  }
 }
 
 .customers__block_item:hover .customers__tooltip {
   display: flex;
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }

@@ -17,13 +17,23 @@ $(function($){
   });
 });
 
-$(function($){
-  if ( $(".news-carusel.owl-nav").hasClass("disabled") ) {
-    $(".news-carusel.owl-nav").removeClass("disabled")
-  }
-});
-
 //маска телефона
 $(function() {
   $("#aerial-photography__tel").mask("+7(999) 999-99-99");
+});
+
+//открытие мобильного меню
+$(function() {
+  $(".menu__button").click(function() {
+    $(".menu").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
+//закрытие мобильного меню
+$(function() {
+  $(".menu__button_close").click(function() {
+    $(".menu").removeClass('el_flex-active');
+    $("body").removeClass('body-hidden');
+  })
 });

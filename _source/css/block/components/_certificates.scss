@@ -1,10 +1,19 @@
 .certificates {
   padding: 60px 0;
+  @include media-breakpoint-down(xs) {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
   &__heading {
     margin-bottom: 22px;
     font-size: $-heading-xl--font_size;
     line-height: $-heading-xl--font_size;
     font-weight: 700;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
   &__text {
     margin-bottom: 35px;
@@ -12,6 +21,11 @@
     font-size: 22px;
     line-height: 32px;
     font-weight: 400;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 22px;
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
   &__block {
     display: flex;

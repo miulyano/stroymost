@@ -41,5 +41,8 @@ img, svg {
 .block-container,
 .menu__list {
   margin: 0 auto;
-  @include  make-container-max-widths()
+  @include  make-container-max-widths();
+  @include media-breakpoint-down(xs) {
+    padding: 0 15px;
+  }
 }
