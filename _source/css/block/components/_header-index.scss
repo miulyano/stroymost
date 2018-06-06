@@ -1,4 +1,5 @@
-.header-index {
+.header-index,
+.header-other {
   position: relative;
   padding-top: 85px;
   min-height: 833px;
@@ -296,5 +297,83 @@
     @include media-breakpoint-down(sm) {
       margin-bottom: 38px;
     }
+  }
+}
+
+
+.header-other {
+  padding-top: 25px;
+  min-height: 252px;
+  background-color: $-white--color;
+  background-image: none;
+  @include media-breakpoint-down(lg) {
+    padding-top: 25px;
+    min-height: 252px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 25px;
+    min-height: 222px;
+  }
+  &__logo {
+    position: absolute;
+    max-width: 140px;
+    top: -15px;
+    left: 0;
+    @include media-breakpoint-down(lg) {
+      top: -15px;
+      left: 0;
+      max-width: 140px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width: 140px;
+    }
+  }
+  &__company-info {
+    margin-left: 160px;
+    position: relative;
+    vertical-align: bottom;
+    z-index: 10;
+    @include media-breakpoint-down(lg) {
+      margin-left: 160px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: 160px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+  &__sub-heading {
+    margin-left: 160px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 160px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: 160px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
+  &__sub-heading,
+  &__company-info_heading,
+  &__company-info_tel-info,
+  &__company-info_tel-info,
+  &__company-info_tel,
+  &__company-info_tel:hover,
+  &__company-info_tel_mobile-text,
+  &__company-info_mobile-subheading,
+  .menu__button {
+    color: $-black--color;
+    @include media-breakpoint-down(sm) {
+      color: $-black--color;
+    }
+  }
+  .menu__button svg {
+    fill: $-black--color;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -90,11 +90,21 @@
   }
 }
 
-.menu-index {
+.menu-index,
+.menu-other {
   width: 100%;
   position: absolute;
   bottom: 0;
   .menu__list_item_link {
     color: $-white--color;
+  }
+}
+
+.menu-other {
+  .menu__list_item_link {
+    color: $-black--color;
+    @include media-breakpoint-down(sm) {
+      color: $-white--color;
+    }
   }
 }
