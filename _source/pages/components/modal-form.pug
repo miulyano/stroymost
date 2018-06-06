@@ -1,0 +1,17 @@
+div.modal-form
+  div.modal-form__overlay
+  div.modal-form__block
+    button.modal-form__block_close-button
+      span.modal-form__block_button-img
+        svg
+          use(xlink:href='#modal-close')
+    h4.modal-form__block_heading Обратная связь
+    p.modal-form__block_text Заполните, пожалуйста, форму. Мы свяжемся с Вами в ближайшее время.
+    form.modal-form__block_form
+      input.modal-form__block_active#name(type="text" placeholder="Ваше имя" required)
+      input.modal-form__block_active(id="modal-tel" type="tel" placeholder="Телефон" required)
+      input.modal-form__block_active(type="email" placeholder="E-mail" required)
+      div
+        input.modal-form__block_checkbox.visually-hidden(id="compliance" type="checkbox" checked required)
+        label.modal-form__block_label(for="compliance") Обработка персональных данных
+      button.modal-form__block_active.modal-form__block_button.button.button-radius.button__filled_blue(type="submit" ) Отправить

@@ -9,3 +9,7 @@
 .body-hidden {
   overflow: hidden;
 }
+
+.required:invalid {
+  background-color: #FFE5E5;
+}

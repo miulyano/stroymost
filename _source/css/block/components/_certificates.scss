@@ -49,4 +49,8 @@
     opacity: .9;
     transform: scale(1.03);
   }
+  .owl-item {
+    display: flex;
+    justify-content: center;
+  }
 }

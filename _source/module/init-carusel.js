@@ -32,26 +32,10 @@ $('.news-carusel').owlCarousel({
 
 //Карусель сертификатов
 $('.certificates-carusel').owlCarousel({
-  loop: true,
   margin: 0,
   responsive: {
     0: {
-      items: 1.1,
-      dots: true,
-      nav: false
-    },
-    321: {
-      items: 1.2,
-      dots: true,
-      nav: false
-    },
-    430: {
-      items: 1.4,
-      dots: true,
-      nav: false
-    },
-    500: {
-      items: 1.6,
+      items: 1,
       dots: true,
       nav: false
     },
@@ -60,13 +44,13 @@ $('.certificates-carusel').owlCarousel({
       dots: true,
       nav: true
     },
-    768: {
-      items: 2.5,
+    769: {
+      items: 2,
       dots: false,
       nav: true
     },
     992: {
-      items: 3.5,
+      items: 3,
       dots: false,
       nav: true
     },
