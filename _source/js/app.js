@@ -37,3 +37,26 @@ $(function() {
     $("body").removeClass('body-hidden');
   })
 });
+
+
+$(".aerial-photography__form").submit(function () {
+  $(".alert-success").addClass('el-active');
+  $("body").addClass('body-hidden');
+  return true;
+});
+
+$(".alert-success__block_close-button").click(function () {
+  $(".alert-success").removeClass('el-active');
+  $("body").removeClass('body-hidden');
+  if ($(".aerial-photography__form_input").val() !== ('')) {
+    $(".aerial-photography__form_input").val('')
+  }
+});
+
+$(".alert-success__overlay").click(function () {
+  $(".alert-success").removeClass('el-active');
+  $("body").removeClass('body-hidden');
+  if ($(".aerial-photography__form_input").val() !== ('')) {
+    $(".aerial-photography__form_input").val('')
+  }
+});
