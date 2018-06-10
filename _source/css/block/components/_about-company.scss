@@ -1,0 +1,17 @@
+.about-company {
+  padding: 40px 0;
+  display: flex;
+  &__text {
+    padding: 25px 0;
+  }
+  &__logo {
+    min-width: 474px;
+    width: 474px;
+  }
+  &__text {
+    max-width: 586px;
+  }
+  &__text_heading {
+    font-size: $-heading-md--font_size;
+  }
+}
