@@ -2,16 +2,32 @@ doctype html
 html(lang='ru')
   head
     include components/head/head-other
-    title ИК Строймост &#149; Клиенты
+    title ИК Строймост &#149; О компании
   body.body
-    include ../pages/components/svg-sprite.pug
     header.header-other
       include ../pages/components/header/header-other.pug
     main.main__block.main__other
+      div.block-container.breadcrumbs-wrapper
+        ul.breadcrumbs
+          li.breadcrumbs__item
+            a(href="/") Главная
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            span О компании
+      include components/about-company.pug
+      section.block-container.about-company__description
+        h4.about-company__description_heading СТРОИТЬ БЕЗ НАС ДОРОГО!
+        p.about-company__description_text В нашу команду мы собрали одних из лучших экспертов в области строительной экспертизы, аудита, технического обследования, составления и проверки сметной документации, а также независимого строительного контроля.
+        p.about-company__description_text Профессиональная подготовка наших специалистов подтверждена дипломами и сертификатами ведущих российских учебных заведений и программ обучения, а также многолетним опытом работы, что гарантирует высокое качество оказываемых услуг.
+        p.about-company__description_text Наша команда обладает уникальным, разносторонним и успешным опытом оказания услуг в области строительного консалтинга, в нашем активе большое число выполненных проектов, отмеченных благодарственными письмами клиентов.
     footer
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug
+    include ../pages/components/svg-sprite.pug
     include ../pages/components/modal-form.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
     script(src='../module/jquery-3.3.1.min/index.js')
     script(src='../module/owl.carousel.min.js')
     script(src='../module/jquery.maskedinput.min.js')

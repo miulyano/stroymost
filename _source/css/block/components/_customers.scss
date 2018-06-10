@@ -62,8 +62,7 @@
     background-color: $-white--color;
     box-shadow: 0px 16px 28.05px 22.95px rgba(0, 0, 0, 0.04);
     z-index: 500;
-    animation: viewTooltip .2s ease-in-out;
-    animation-direction: reverse;
+    animation: viewTooltip .15s ease-in-out;
   }
   @keyframes viewTooltip {
     0% {

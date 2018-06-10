@@ -18,7 +18,6 @@
     background-color: rgba(0,0,0,.6);
     opacity: 0;
     animation: viewOverlay .45s ease-in-out;
-    animation-direction: reverse;
     animation-fill-mode: forwards;
   }
   &__block {
@@ -31,6 +30,8 @@
     border-radius: 5px;
     z-index: 50;
     animation: viewModal .45s ease-in-out;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
     @include media-breakpoint-down(md) {
       width: auto;
     }

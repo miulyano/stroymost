@@ -1,5 +1,163 @@
 .aside-menu {
-  padding: 23px;
-  border-left: 1px solid $-border-dark--color;
-  border-right: 1px solid $-border-dark--color;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  button {
+    position: relative;
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+    border: none;
+    text-align: left;
+  }
+  &__certificates {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 296px;
+    .owl-stage {
+      margin-left: 23px;
+    }
+    .owl-item {
+      width: 249px;
+    }
+  }
+  &__list_item-arrow {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/style/arrow-left-blue.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    transform: rotate(180deg);
+    transition: transform .2s ease-in-out;
+  }
+  &__list_item,
+  &__sublist_item {
+    position: relative;
+  }
+  &__list_item::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: $-background--light-blue--color;
+    animation: asideView .35s ease-in-out;
+  }
+  &__list_item:hover::after,
+  &__list_item:focus::after {
+    display: block;
+  }
+  &__list_item:not(:last-child)::before,
+  &__sublist_item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 46px);
+    height: 1px;
+    bottom: 0;
+    left: 23px;
+    background-color: $-border-dark--color;
+  }
+  &__list_item button:hover &__list_item-arrow,
+  &__list_item button:focus &__list_item-arrow {
+    transform: rotate(270deg);
+  }
+  &__list_item a,
+  &__sublist_item a,
+  &__list_item button {
+    padding: 20px 0;
+    font-size: $-default--font_size;
+    line-height: 22px;
+    color: $-black--color;
+    transition: color .2s ease-in-out;
+    z-index: 10;
+  }
+  &__list_item button {
+    box-shadow: none;
+    padding-right: 30px;
+  }
+  &__sublist {
+    display: none;
+    position: absolute;
+    top: -1px;
+    right: -296px;
+    width: 296px;
+    background-color: $-background--light-blue--color;
+    z-index: 2000;
+    animation: asideView .35s ease-in-out;
+    @include media-breakpoint-down(sm) {
+      position: static;
+      width: 100%;
+    }
+  }
+  &__list_item:hover > &__sublist {
+    display: block;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  &__list_item button:active ~ &__sublist {
+    display: block;
+  }
+  &__list_item,
+  &__sublist_item {
+    padding: 0 23px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  &__list_item {
+    border-left: 1px solid $-border-dark--color;
+    border-right: 1px solid $-border-dark--color;
+    @include media-breakpoint-down(sm) {
+      border: none;
+    }
+  }
+  &__list_item button:hover,
+  &__sublist_item button:hover,
+  &__list_item a:hover,
+  &__sublist_item a:hover {
+    text-decoration: none;
+    color: $-active--color;
+    cursor: pointer;
+    border: none;
+  }
+  &__certificates_heading {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  &__certificates_block_item {
+    padding: 27px;
+    max-width: 249px;
+    border: 3px solid $-border-light--color;
+    span {
+      cursor: pointer;
+    }
+    img {
+      min-width: 100%;
+    }
+  }
+}
+
+@keyframes asideView {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

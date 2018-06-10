@@ -21,6 +21,7 @@ $(function($){
 $(function() {
   $("#aerial-photography__tel").mask("+7(999) 999-99-99");
   $("#modal-tel").mask("+7(999) 999-99-99");
+  $("#contacts-form-tel").mask("+7(999) 999-99-99");
 });
 
 //открытие мобильного меню
@@ -46,22 +47,36 @@ $(".aerial-photography__form").submit(function () {
   return true;
 });
 
+$(".contacts-form").submit(function () {
+  $(".alert-success").addClass('el_flex-active');
+  $("body").addClass('body-hidden');
+  return true;
+});
+
 //закрытие алерта
 $(".alert-success__block_close-button").click(function () {
   $(".alert-success").removeClass('el_flex-active');
   $('.aerial-photography__form_input').removeClass('required');
+  $('.contacts-form__item').removeClass('required');
   $("body").removeClass('body-hidden');
   if ($(".aerial-photography__form_input").val() !== ('')) {
     $(".aerial-photography__form_input").val('')
+  }
+  if ($(".contacts-form__item").val() !== ('')) {
+    $(".contacts-form__item").val('')
   }
 });
 
 $(".alert-success__overlay").click(function () {
   $(".alert-success").removeClass('el_flex-active');
   $('.aerial-photography__form_input').removeClass('required');
+  $('.contacts-form__item').removeClass('required');
   $("body").removeClass('body-hidden');
   if ($(".aerial-photography__form_input").val() !== ('')) {
     $(".aerial-photography__form_input").val('')
+  }
+  if ($(".contacts-form__item").val() !== ('')) {
+    $(".contacts-form__item").val('')
   }
 });
 
@@ -170,11 +185,28 @@ $(document).on('keyup',function(evt) {
     $("#modal__certificates-5").removeClass('el_flex-active');
     $(".modal-form").removeClass('el_flex-active');
     $('.modal-form__block_active').removeClass('required');
-    $(".alert-success").removeClass('el_flex-active');
     $('.aerial-photography__form_input').removeClass('required');
+    $('.contacts-form__item').removeClass('required');
+    $(".alert-success").removeClass('el_flex-active');
+    $('.contacts-form__item').removeClass('required');
     if ($(".aerial-photography__form_input").val() !== ('')) {
       $(".aerial-photography__form_input").val('')
     }
+    if ($(".contacts-form__item").val() !== ('')) {
+      $(".contacts-form__item").val('')
+    }
     $("body").removeClass('body-hidden');
   }
+});
+
+//aside-bar
+$(function() {
+  $(".aside-menu__list_item").click(function(e) {
+    //e.preventDefault();
+    if($(this).find(".aside-menu__sublist").hasClass('el-active')) {
+      $(this).find(".aside-menu__sublist").removeClass('el-active').removeAttr( 'style' ).css('display', 'none');
+    } else {
+      $(this).find(".aside-menu__sublist").addClass('el-active').removeAttr( 'style' ).css('display', 'block');
+    }
+  })
 });

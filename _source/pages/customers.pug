@@ -2,19 +2,18 @@ doctype html
 html(lang='ru')
   head
     include components/head/head-other
-    title ИК Строймост &#149; Проекты
+    title ИК Строймост &#149; Клиенты
   body.body
-    include ../pages/components/svg-sprite.pug
     header.header-other
       include ../pages/components/header/header-other.pug
     main.main__block.main__other
-      include components/aerial_photography/aerial_photography-other.pug
-      include components/about-company.pug
     footer
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug
-    include ../pages/components/alert.pug
+    include ../pages/components/svg-sprite.pug
     include ../pages/components/modal-form.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
     script(src='../module/jquery-3.3.1.min/index.js')
     script(src='../module/owl.carousel.min.js')
     script(src='../module/jquery.maskedinput.min.js')

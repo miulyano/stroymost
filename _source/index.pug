@@ -4,11 +4,10 @@ html(lang='ru')
     include pages/components/head/head
     title ИК Строймост &#149; Главная
   body.body
-    include pages/components/svg-sprite.pug
     header.header-index
       include pages/components/header/header-index.pug
     main.main__block
-      include pages/components/aerial_photography.pug
+      include pages/components/aerial_photography/aerial_photography
       include pages/components/projects.pug
       include pages/components/news.pug
       include pages/components/certificates.pug
@@ -19,6 +18,9 @@ html(lang='ru')
     include pages/components/alert.pug
     include pages/components/modal-form.pug
     include pages/components/modal-certificates.pug
+    include pages/components/svg-sprite.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='module/ymaps.js', type='text/javascript', async='')
     script(src='module/jquery-3.3.1.min/index.js')
     script(src='module/owl.carousel.min.js')
     script(src='module/jquery.maskedinput.min.js')

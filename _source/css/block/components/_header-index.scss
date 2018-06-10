@@ -4,7 +4,7 @@
   padding-top: 85px;
   min-height: 833px;
   background-color: #b1b1b1;
-  background-image: url('../img/index/content/header-image.png');
+  background-image: url('../img/index/content/header-image.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
@@ -160,12 +160,12 @@
     font-size: 28px;
     line-height: 28px;
     color: $-white--color;
+    font-weight: 700;
     @include media-breakpoint-down(md) {
       font-size: 24px;
     }
     @include media-breakpoint-down(sm) {
       font-size: 34px;
-      font-weight: 700;
     }
   }
   &__company-info_tel:hover {

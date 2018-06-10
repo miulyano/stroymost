@@ -18,3 +18,11 @@
 @import "block/components/alert"; //блок алерта
 @import "block/components/modal-form"; //блок модалки
 @import "block/components/modal-certificates"; //модалки сертификатов
+@import "block/components/about-company"; //компонент о компании
+@import "block/components/aside-menu"; //компонент бокового меню
+
+//стили внутренних страниц
+@import "block/pages/services"; //страница услуг
+@import "block/pages/projects"; //страница проектов
+@import "block/pages/about"; //страница о компании
+@import "block/pages/contacts"; //страница контактов

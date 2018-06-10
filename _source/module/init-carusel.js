@@ -62,6 +62,19 @@ $('.certificates-carusel').owlCarousel({
   }
 });
 
+//Карусель сертификатов в боковом меню
+$('.aside-carusel').owlCarousel({
+  margin: 50,
+  center: true,
+  dots: true,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1
+    }
+  }
+});
+
 //Карусель клиентов
 $('.customers-carusel').owlCarousel({
   center: true,

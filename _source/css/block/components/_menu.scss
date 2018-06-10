@@ -49,10 +49,10 @@
     flex-grow: 1;
     position: relative;
   }
-  &__list_item:not(:last-child)::after {
+  &__list_item::after,
+  &__list_item::before {
     content: '';
     top: 27px;
-    right: 0;
     position: absolute;
     height: 34px;
     width: 1px;
@@ -64,6 +64,12 @@
     @include media-breakpoint-down(sm) {
       display: none;
     }
+  }
+  &__list_item::after {
+    right: 0;
+  }
+  &__list_item::before {
+    left: -1px;
   }
   &__list_item_link {
     padding-top: 25px;

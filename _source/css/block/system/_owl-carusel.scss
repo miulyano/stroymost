@@ -126,3 +126,29 @@
     overflow: visible!important;
   }
 }
+
+.aside-menu__certificates {
+  .owl-prev,
+  .owl-next {
+    top: calc(50% - 37px);
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    background-color: $-white--color!important;
+    color: $-active--color!important;
+    border: 1px solid $-icon-border--color!important;
+  }
+  .owl-prev {
+    left: 0;
+  }
+  .owl-next {
+    right: 0;
+  }
+  .owl-prev:hover,
+  .owl-next:hover {
+    color: $-white--color!important;
+    background-color: $-active--color!important;
+    border: none!important;
+  }
+}
