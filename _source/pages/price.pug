@@ -1,0 +1,67 @@
+doctype html
+html(lang='ru')
+  head
+    include components/head/head-other
+    title ИК Строймост &#149 Перечень цен на услуги
+  body.body
+    header.header-other
+      include ../pages/components/header/header-other.pug
+    main.main__block.main__other
+      div.main__section.block-container
+        section.main__section_aside-wrapper
+          include components/aside-menu.pug
+        section.main__section_content.price
+          ul.breadcrumbs
+            li.breadcrumbs__item
+              a(href="/") Главная
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/services.html") Услуги
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/services-item.html") Строительный контроль
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              span Перечень цен на услуги
+          h3.main__section_content_heading Перечень цен на услуги
+          div.price__link-block
+            a.price__link-block_item(href="/pages/price-item.html")
+              span.price__link-block_item-text Стоимость услуг по техническому надзору
+              span.price__link-block_item-arrow ›
+            a.price__link-block_item(href="/pages/price-item.html")
+              span.price__link-block_item-text Стоимость услуг строительного контроля
+              span.price__link-block_item-arrow ›
+            a.price__link-block_item(href="/pages/price-item.html")
+              span.price__link-block_item-text Стоимость услуг по обследованию зданий и сооружений
+              span.price__link-block_item-arrow ›
+            a.price__link-block_item(href="/pages/price-item.html")
+              span.price__link-block_item-text Стоимость услуг по составлению и проверке смет
+              span.price__link-block_item-arrow ›
+            a.price__link-block_item(href="/pages/price-item.html")
+              span.price__link-block_item-text Стоимость услуг проведения строительно-технической экспертизы
+              span.price__link-block_item-arrow ›
+          div.price__button-block
+            button.button.button-radius.button__filled_blue.price__button Заказать услугу
+            a(href="/pages/projects.html").button.button-radius.button__blue-border.project__link Смотреть проекты
+            button.button.button-radius.button__blue-border.price__button Получить консультацию
+          include components/calculator-form.pug
+      include components/customers.pug
+      include components/about-company.pug
+    footer
+      include ../pages/components/card.pug
+      include ../pages/components/footer/footer-other.pug
+    include ../pages/components/alert.pug
+    include ../pages/components/modal-form.pug
+    include ../pages/components/modal-certificates.pug
+    include ../pages/components/svg-sprite.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
+    script(src='../module/jquery-3.3.1.min/index.js')
+    script(src='../module/owl.carousel.min.js')
+    script(src='../module/jquery.maskedinput.min.js')
+    script(src='../module/init-carusel.js')
+    script(src='../js/bundle.min.js')
+    link(rel='stylesheet', href='/css/js-style.css')

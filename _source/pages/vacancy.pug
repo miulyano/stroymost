@@ -2,11 +2,77 @@ doctype html
 html(lang='ru')
   head
     include components/head/head-other
-    title ИК Строймост &#149; Вакансии
+    title ИК Строймост &#149 Вакансии
   body.body
     header.header-other
       include ../pages/components/header/header-other.pug
     main.main__block.main__other
+      div.block-container.breadcrumbs-wrapper
+        ul.breadcrumbs
+          li.breadcrumbs__item
+            a(href="/") Главная
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            span Вакансии
+      section.vacancy-page.block-container
+        h3.vacancy-page__heading Вакансии
+        p.vacancy-page__text Компания ИК СТРОЙМОСТ в целях удовлетворения потребностей Заказчиков приступила к расширению Федеральной Экспертной Базы, в которую входят и могут попасть только квалифицированные и аккредитованные в компании ИК СТРОЙМОСТ кадры
+        section.vacancy-page__block
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
+          article.vacancy-page__block_item
+            p.vacancy-page__block_item_info
+              span.vacancy-page__block_item_info-city Москва
+              span.vacancy-page__block_item_info-date 12.05.2018г.
+            p.vacancy-page__block_item_description Ведущий инженер по обследованию зданий и сооружений
+            a.button.button-radius.button__filled_blue(href="/pages/vacancy-item.html") Подробнее
     footer
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug

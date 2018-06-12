@@ -152,3 +152,27 @@
     border: none!important;
   }
 }
+
+.projects-item-carusel {
+  .owl-prev,
+  .owl-next {
+    margin-top: -375px;
+    color: $-white--color!important;
+    border: 1px solid $-white--color!important;
+    @include media-breakpoint-down(md) {
+      margin-top: -395px;
+    }
+  }
+  .owl-prev:hover,
+  .owl-next:hover {
+    color: $-white--color!important;
+    background-color: $-active--color!important;
+    border: none!important;
+  }
+  .owl-next {
+    margin-right: 40px;
+    @include media-breakpoint-down(md) {
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+section.calculator
+  h4.calculator__heading Калькулятор стоимости
+  form.calculator__form(action="#")
+    input.calculator__form_item(type="text", name="target", placeholder="Опишите цель или задачу")
+    input.calculator__form_item(type="text", name="appointment", placeholder="Наименование или назначение объекта")
+    input.calculator__form_item(type="text", name="location", placeholder="Расположение объекта")
+    input.calculator__form_item.area(type="number", name="area", placeholder="Площадь объекта")
+    input.inputfile.visually-hidden(type="file", name="file", id="file", data-multiple-caption="{count} files selected", multiple)
+    label.upload-block(for="file")
+      span.calculator__form_item.drag-container#dropZone
+        svg
+          use(xlink:href='#arrow-upload')
+        | Перетащите файл сюда
+      span.calculator__form_item.upload-button Прикрепить файл
+      span.upload-title
+    div.calculator__form_wrapper
+      input.calculator__form_item(type="text", name="name", placeholder="Ваше имя" required)
+      input.calculator__form_item(type="tel", id="calculator-tel", name="tel", placeholder="Ваш телефон" required)
+      input.calculator__form_item(type="email", name="email", placeholder="Ваш Email" required)
+    input.calculator__form_checkbox.visually-hidden(type="checkbox", id="required" checked required)
+    label.calculator__form_checkbox-label(for="required") Нажимая на кнопку, я даю свое согласие на обработку персональных данных
+    button.calculator__form_item.button.button__filled_blue.button-rounded(type="submit") Рассчитать стоимость

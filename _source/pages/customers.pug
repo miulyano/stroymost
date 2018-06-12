@@ -2,16 +2,62 @@ doctype html
 html(lang='ru')
   head
     include components/head/head-other
-    title ИК Строймост &#149; Клиенты
+    title ИК Строймост &#149 Клиенты
   body.body
     header.header-other
       include ../pages/components/header/header-other.pug
     main.main__block.main__other
+      div.block-container.breadcrumbs-wrapper
+        ul.breadcrumbs
+          li.breadcrumbs__item
+            a(href="/") Главная
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            span Клиенты
+      section.block-container.customers-page
+        h3.customers-page__heading Наши клиенты
+        p.customers-page__title Отзывы и благодарственные письма от наших клиентов
+        article.customers-page__block
+          div.customers-page__block_logo
+            img(src="/img/index/clientage/danfuss.png", alt="danfuss")
+          div.customers-page__block_description
+            h4.customers-page__block_description-heading ПАО "ВымпелКом"
+            p.customers-page__block_description-text ПАО "ВымпелКом" входит в группу компаний "ВымпелКом Лтд", которая является одним из крупнейших мировых интегрированных операторов связи, в который входят компании, предоставляющие услуги голосовой связи и передачи данных на основе широкого спектра технологий беспрово,дной и фиксированной связи, а также широкополосного доступа в Интернет в России, Италии, Украине, Казахстане, Узбекистане, Таджикистане, Армении, Грузии, Кыргызстане, Лаосе, Алжире, Бангладеш, Пакистане и Зимбабве.
+            div.customers-page__block_gratitudes
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+        article.customers-page__block
+          div.customers-page__block_logo
+            img(src="/img/index/clientage/thl.png", alt="thl")
+          div.customers-page__block_description
+            h4.customers-page__block_description-heading ПАО "ВымпелКом"
+            p.customers-page__block_description-text ПАО "ВымпелКом" входит в группу компаний "ВымпелКом Лтд", которая является одним из крупнейших мировых интегрированных операторов связи, в который входят компании, предоставляющие услуги голосовой связи и передачи данных на основе широкого спектра технологий беспрово,дной и фиксированной связи, а также широкополосного доступа в Интернет в России, Италии, Украине, Казахстане, Узбекистане, Таджикистане, Армении, Грузии, Кыргызстане, Лаосе, Алжире, Бангладеш, Пакистане и Зимбабве.
+            div.customers-page__block_gratitudes
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+        article.customers-page__block
+          div.customers-page__block_logo
+            img(src="/img/index/clientage/gazprom.png", alt="gazprom")
+          div.customers-page__block_description
+            h4.customers-page__block_description-heading Газпромнефть
+            p.customers-page__block_description-text Газпромнефть - российская нефтяная компания. Входит в четвёрку крупнейших российских вертикально-интегрированных нефтяных компаний по объёмам добычи, и в тройку по объёмам переработки нефти. Занимает лидирующие позиции в России по темпам роста добычи углеводородного сырья и переработки нефтепродуктов.
+            div.customers-page__block_gratitudes
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+              span.customers-page__block_gratitudes-item(role="button")
+                img(src="/img/index/gratitudes/gratitude.png", alt="Благодарность")
+        button.button.button-radius.button__blue-border Показать еще
     footer
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug
     include ../pages/components/svg-sprite.pug
     include ../pages/components/modal-form.pug
+    include ../pages/components/modal-gratitudes.pug
     script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
     script(src='../module/ymaps.js', type='text/javascript', async='')
     script(src='../module/jquery-3.3.1.min/index.js')

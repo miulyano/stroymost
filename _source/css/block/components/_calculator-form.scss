@@ -1,0 +1,157 @@
+.calculator {
+  padding: 40px;
+  border-radius: 8px;
+  background-color: $-background--light-blue--color;
+  @include media-breakpoint-down(xs) {
+    padding: 20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  &__form_item {
+    border-radius: 8px;
+    padding: 22px;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  &__form_item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__form_item::placeholder {
+    color: $-gray--color;
+    transition: color .2s ease-in-out;
+  }
+  &__form_item:hover::placeholder,
+  &__form_item:focus::placeholder {
+    color: $-border-dark--color;
+  }
+  &__form_wrapper {
+    display: flex;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+    .calculator__form_item {
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
+    .calculator__form_item:not(:last-child) {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+      }
+
+    }
+    .calculator__form_item:not(:last-child) {
+      margin-right: 20px;
+      @include media-breakpoint-down(lg) {
+        margin-right: 0;
+      }
+    }
+  }
+  .upload-block {
+    display: flex;
+    flex-wrap: wrap;
+    .drag-container {
+      display: inline-flex;
+      align-items: flex-start;
+      flex-grow: 2;
+      margin-right: 20px;
+      color: $-gray--color;
+      background-color: $-white--color;
+      border: 1px dashed $-gray--color;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+      svg {
+        display: inline-block;
+        margin-right: 12px;
+        width: 15px;
+        height: 17px;
+      }
+    }
+    .upload-button {
+      flex-grow: 1;
+      line-height: 16px;
+      padding-left: 45px;
+      padding-right: 45px;
+      margin-bottom: 20px;
+      color: $-white--color;
+      background-color: $-add-button--color;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out;
+    }
+    .upload-button:hover {
+      background-color: mix($-black--color, $-add-button--color, 15%);
+    }
+    .upload-title {
+      position: relative;
+      margin-top: -15px;
+      margin-bottom: 10px;
+      width: 100%;
+      font-size: 16px;
+      color: $-gray--color;
+      display: block;
+    }
+  }
+  &__form_checkbox-label {
+    display: inline-block;
+    position: relative;
+    margin: 20px 0;
+    padding-left: 35px;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__form_checkbox-label::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: $-white--color;
+    border-radius: 2px;
+  }
+  &__form_checkbox-label::after {
+    content: '';
+    display: none;
+    top: 8px;
+    left: 7px;
+    position: absolute;
+    width: 11px;
+    height: 8px;
+    background-image: url('../../img/style/checkbox-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+  }
+  &__form_checkbox:checked + &__form_checkbox-label::after {
+    display: block;
+  }
+  .area {
+    width: 100%;
+  }
+}

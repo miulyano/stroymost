@@ -20,9 +20,19 @@
 @import "block/components/modal-certificates"; //модалки сертификатов
 @import "block/components/about-company"; //компонент о компании
 @import "block/components/aside-menu"; //компонент бокового меню
+@import "block/components/calculator-form"; //компонент калькулятора
 
 //стили внутренних страниц
 @import "block/pages/services"; //страница услуг
 @import "block/pages/projects"; //страница проектов
 @import "block/pages/about"; //страница о компании
 @import "block/pages/contacts"; //страница контактов
+@import "block/pages/customers"; //страница клиенты
+@import "block/pages/news"; //страница новостей
+@import "block/pages/vacancy"; //страница вакансий
+@import "block/pages/news-item"; //страница новости
+@import "block/pages/projects-item"; //страница проекта
+@import "block/pages/services-item"; //страница услуги
+@import "block/pages/vacancy-item"; //страница вакансии
+@import "block/pages/price"; //страница цен на услуги
+@import "block/pages/price-item"; //страница цен на услуги (категория)

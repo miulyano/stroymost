@@ -11,6 +11,18 @@ $('.projects-carusel').owlCarousel({
   }
 });
 
+$('.projects-item-carusel').owlCarousel({
+  loop: true,
+  margin: 0,
+  nav: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1
+    }
+  }
+});
+
 //Карусель новостей
 $('.news-carusel').owlCarousel({
   loop: true,

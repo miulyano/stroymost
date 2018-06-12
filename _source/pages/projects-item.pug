@@ -1,0 +1,50 @@
+doctype html
+html(lang='ru')
+  head
+    include components/head/head-other
+    title ИК Строймост &#149 Проекты
+  body.body
+    header.header-other
+      include ../pages/components/header/header-other.pug
+    main.main__block.main__other
+      div.main__section.block-container
+        section.main__section_aside-wrapper
+          include components/aside-menu.pug
+        section.main__section_content.projects-item
+          ul.breadcrumbs
+            li.breadcrumbs__item
+              a(href="/") Главная
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/projects.html") Проекты
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              span Проект
+          h3.main__section_content_heading Международная школа
+          div.projects-item-carusel.owl-carousel.owl-theme
+            div.projects-item__image
+              img(src="/img/index/content/school.jpg", alt="Международная школа")
+            div.projects-item__image
+              img(src="/img/index/content/school.jpg", alt="Международная школа")
+          p.projects-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+          p.projects-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+          p.projects-item__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+      include components/aerial_photography/aerial_photography-other.pug
+      include components/about-company.pug
+    footer
+      include ../pages/components/card.pug
+      include ../pages/components/footer/footer-other.pug
+    include ../pages/components/alert.pug
+    include ../pages/components/modal-form.pug
+    include ../pages/components/modal-certificates.pug
+    include ../pages/components/svg-sprite.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
+    script(src='../module/jquery-3.3.1.min/index.js')
+    script(src='../module/owl.carousel.min.js')
+    script(src='../module/jquery.maskedinput.min.js')
+    script(src='../module/init-carusel.js')
+    script(src='../js/bundle.min.js')
+    link(rel='stylesheet', href='/css/js-style.css')

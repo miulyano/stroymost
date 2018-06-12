@@ -22,6 +22,7 @@ $(function() {
   $("#aerial-photography__tel").mask("+7(999) 999-99-99");
   $("#modal-tel").mask("+7(999) 999-99-99");
   $("#contacts-form-tel").mask("+7(999) 999-99-99");
+  $("#calculator-tel").mask("+7(999) 999-99-99");
 });
 
 //открытие мобильного меню
@@ -48,6 +49,12 @@ $(".aerial-photography__form").submit(function () {
 });
 
 $(".contacts-form").submit(function () {
+  $(".alert-success").addClass('el_flex-active');
+  $("body").addClass('body-hidden');
+  return true;
+});
+
+$(".calculator__form").submit(function () {
   $(".alert-success").addClass('el_flex-active');
   $("body").addClass('body-hidden');
   return true;
@@ -83,6 +90,22 @@ $(".alert-success__overlay").click(function () {
 //Открытие модалки
 $(function() {
   $("#modal-button").click(function() {
+    $(".modal-form").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".price__button").click(function() {
+    $(".modal-form").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+    $("#name").focus();
+  })
+});
+
+$(function() {
+  $(".services-item__button").click(function() {
     $(".modal-form").addClass('el_flex-active');
     $("body").addClass('body-hidden');
     $("#name").focus();
@@ -153,6 +176,14 @@ $(function() {
   })
 });
 
+$(function() {
+  $(".customers-page__block_gratitudes-item").click(function(e) {
+    e.preventDefault();
+    $("#modal__gratitudes-1").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
 //закрытие модалок с сертификатами
 $(function() {
   $(".modal__overlay").click(function() {
@@ -161,6 +192,7 @@ $(function() {
     $("#modal__certificates-3").removeClass('el_flex-active');
     $("#modal__certificates-4").removeClass('el_flex-active');
     $("#modal__certificates-5").removeClass('el_flex-active');
+    $("#modal__gratitudes-1").removeClass('el_flex-active');
     $("body").removeClass('body-hidden');
   })
 });
@@ -172,6 +204,7 @@ $(function() {
     $("#modal__certificates-3").removeClass('el_flex-active');
     $("#modal__certificates-4").removeClass('el_flex-active');
     $("#modal__certificates-5").removeClass('el_flex-active');
+    $("#modal__gratitudes-1").removeClass('el_flex-active');
     $("body").removeClass('body-hidden');
   })
 });
@@ -183,6 +216,7 @@ $(document).on('keyup',function(evt) {
     $("#modal__certificates-3").removeClass('el_flex-active');
     $("#modal__certificates-4").removeClass('el_flex-active');
     $("#modal__certificates-5").removeClass('el_flex-active');
+    $("#modal__gratitudes-1").removeClass('el_flex-active');
     $(".modal-form").removeClass('el_flex-active');
     $('.modal-form__block_active').removeClass('required');
     $('.aerial-photography__form_input').removeClass('required');
@@ -210,3 +244,34 @@ $(function() {
     }
   })
 });
+
+//file-input
+( function( $, window, document, undefined )
+{
+  $( '.inputfile' ).each( function()
+  {
+    var $input	 = $( this ),
+      $label	 = $input.next( 'label' ),
+      labelVal = $label.html();
+
+    $input.on( 'change', function( e )
+    {
+      var fileName = '';
+
+      if( this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+      else if( e.target.value )
+        fileName = e.target.value.split( '\\' ).pop();
+
+      if( fileName )
+        $label.find( '.upload-title' ).html( fileName );
+      else
+        $label.html( labelVal );
+    });
+
+    // Firefox bug fix
+    $input
+      .on( 'focus', function(){ $input.addClass( 'has-focus' ); })
+      .on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
+  });
+})( jQuery, window, document );

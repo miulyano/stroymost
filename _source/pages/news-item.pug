@@ -1,0 +1,47 @@
+doctype html
+html(lang='ru')
+  head
+    include components/head/head-other
+    title ИК Строймост &#149 Международная школа
+  body.body
+    header.header-other
+      include ../pages/components/header/header-other.pug
+    main.main__block.main__other
+      section.news-page.news-item-page.block-container
+        div.news-page__main-news
+          div.news-page__main-news_image
+            img(src="/img/index/content/school.jpg", alt="Школа")
+            span.mask
+      div.block-container.breadcrumbs-wrapper
+        ul.breadcrumbs
+          li.breadcrumbs__item
+            a(href="/") Главная
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            a(href="/pages/news.html") Новости
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            span Международная школа
+      section.block-container.news-item-page__description
+        span.news-item-page__description_date 01.04.2016
+        h3.news-item-page__description_heading Международная школа
+        p.news-item-page__description_item Компания переходит на цифровой формат контроля за строительством, используя последние мобильные разработки и уникальное программное обеспечение.
+        p.news-item-page__description_item Инженеры компании, при помощи специальных планшетов смогут в режиме онлайн обмениваться информацией по строящемуся объекту, вовлекая в единое информационное поле всех участников строительства. Система, используя облачное решение, позволяет объединить данные и предоставить доступ всем участникам процесса вне зависимости от того, где они находятся.
+        p.news-item-page__description_item Одна из функций данного решения - оповещение об изменениях, которые происходят на стройплощадке, в том числе об устраненных дефектах и обновлении документации. В приложении также можно прикреплять фотоотчеты, подтверждая достоверность информации. Это позволяет заказчику практически из любой точки мира контролировать ход строительства и отслеживать работу сотрудников.
+        p.news-item-page__description_item По каждому нарушению можно вести переписку также как в чате. При этом приложение автоматизирует работу по оформлению предписаний, что позволяет инженерам не проделывать двойную работу.
+        p.news-item-page__description_item «Самый главный плюс данного решения – это колоссальная экономия времени. Теперь за считанные минуты инженер может направить замечания исполнителю, сформировать документацию, а также проверить, устранены ли ошибки. Западные инвесторы также обратили внимание на наш опыт, так как в России мало компаний, использующих мобильные системы для автоматизации строительного контроля», - отметил генеральный директор Хусейн Плиев.
+    footer
+      include ../pages/components/card.pug
+      include ../pages/components/footer/footer-other.pug
+    include ../pages/components/svg-sprite.pug
+    include ../pages/components/modal-form.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
+    script(src='../module/jquery-3.3.1.min/index.js')
+    script(src='../module/owl.carousel.min.js')
+    script(src='../module/jquery.maskedinput.min.js')
+    script(src='../module/init-carusel.js')
+    script(src='../js/bundle.min.js')
+    link(rel='stylesheet', href='/css/js-style.css')

@@ -1,0 +1,59 @@
+doctype html
+html(lang='ru')
+  head
+    include components/head/head-other
+    title ИК Строймост &#149 Стоимость услуг строительного контроля
+  body.body
+    header.header-other
+      include ../pages/components/header/header-other.pug
+    main.main__block.main__other
+      div.main__section.block-container
+        section.main__section_aside-wrapper
+          include components/aside-menu.pug
+        section.main__section_content.price.price-item
+          ul.breadcrumbs
+            li.breadcrumbs__item
+              a(href="/") Главная
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/services.html") Услуги
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/services-item.html") Строительный контроль
+              svg.breadcrumbs__item_arrow
+                use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              a(href="/pages/price.html") Перечень цен на услуги
+                svg.breadcrumbs__item_arrow
+                  use(xlink:href='#breadcrumbs-arrow')
+            li.breadcrumbs__item
+              span Стоимость услуг строительного контроля
+          h3.main__section_content_heading Стоимость услуг строительного контроля
+          div.price-item__block
+            div.price-item__block_image
+              img(src="/img/pages/services/services.png")
+            p.price-item__block_text Строительство объекта – ответственное мероприятие с большим количеством рисков. Избежать в этом деле просчетов и ошибок можно при помощи экспертной организации, осуществляющей строительный контроль. Благодаря непрерывному надзору, своевременному обнаружению и исправлению недоработок можно получить качественный результат точно в срок, без финансовых потерь и по обоснованной цене.
+          div.price__button-block
+            button.button.button-radius.button__filled_blue.price__button Заказать услугу
+            a(href="/pages/projects.html").button.button-radius.button__blue-border.project__link Смотреть проекты
+            button.button.button-radius.button__blue-border.price__button Получить консультацию
+          include components/calculator-form.pug
+      include components/customers.pug
+      include components/about-company.pug
+    footer
+      include ../pages/components/card.pug
+      include ../pages/components/footer/footer-other.pug
+    include ../pages/components/alert.pug
+    include ../pages/components/modal-form.pug
+    include ../pages/components/modal-certificates.pug
+    include ../pages/components/svg-sprite.pug
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+    script(src='../module/ymaps.js', type='text/javascript', async='')
+    script(src='../module/jquery-3.3.1.min/index.js')
+    script(src='../module/owl.carousel.min.js')
+    script(src='../module/jquery.maskedinput.min.js')
+    script(src='../module/init-carusel.js')
+    script(src='../js/bundle.min.js')
+    link(rel='stylesheet', href='/css/js-style.css')

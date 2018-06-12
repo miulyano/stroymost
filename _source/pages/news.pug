@@ -2,11 +2,56 @@ doctype html
 html(lang='ru')
   head
     include components/head/head-other
-    title ИК Строймост &#149; Новости
+    title ИК Строймост &#149 Новости
   body.body
     header.header-other
       include ../pages/components/header/header-other.pug
     main.main__block.main__other
+      div.block-container.breadcrumbs-wrapper
+        ul.breadcrumbs
+          li.breadcrumbs__item
+            a(href="/") Главная
+            svg.breadcrumbs__item_arrow
+              use(xlink:href='#breadcrumbs-arrow')
+          li.breadcrumbs__item
+            span Клиенты
+      section.news-page.block-container
+        h3.news-page__heading Новости
+        div.news-page__main-news
+          div.news-page__main-news_image
+            img(src="/img/index/content/school.jpg", alt="Школа")
+            span.mask
+          div.news-page__main-news_info
+            span.news-page__main-news_info_date 23.04.2016
+            h4.news-page__main-news_info-heading Международная школа
+            p.news-page__main-news_info-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            a(href="/pages/news-item.html").button.button-radius.button__empty_white.news-page__main-news-info-link Подробнее
+        section.news-page__block
+          article.news-page__block_item
+            div.news-page__block_item_image
+              img(src="/img/pages/news/news.png", alt="Объект")
+            div.news-page__block_item_info
+              a(href="/pages/news-item.html").news-page__block_item_info-heading Строительный контроль в режиме онлайн
+              p.news-page__block_item_info-text Компания Смарт Инжинирс переходит на цифровой формат контроля за строительством, используя последние мобильные разработки и уникальное программное обеспечение.
+              span.news-page__block_item_info-date 23.04.2018
+              a(href="/pages/news-item.html").news-page__block_item_info-link Подробнее
+          article.news-page__block_item
+            div.news-page__block_item_image
+              img(src="/img/pages/news/news.png", alt="Объект")
+            div.news-page__block_item_info
+              a(href="/pages/news-item.html").news-page__block_item_info-heading Строительный контроль в режиме онлайн
+              p.news-page__block_item_info-text Компания Смарт Инжинирс переходит на цифровой формат контроля за строительством, используя последние мобильные разработки и уникальное программное обеспечение.
+              span.news-page__block_item_info-date 23.04.2018
+              a.news-page__block_item_info-link(href="/pages/news-item.html") Подробнее
+          article.news-page__block_item
+            div.news-page__block_item_image
+              img(src="/img/pages/news/news.png", alt="Объект")
+            div.news-page__block_item_info
+              a(href="/pages/news-item.html").news-page__block_item_info-heading Строительный контроль в режиме онлайн
+              p.news-page__block_item_info-text Компания Смарт Инжинирс переходит на цифровой формат контроля за строительством, используя последние мобильные разработки и уникальное программное обеспечение.
+              span.news-page__block_item_info-date 23.04.2018
+              a.news-page__block_item_info-link(href="/pages/news-item.html") Подробнее
+        button.button.button-radius.button__blue-border Показать еще
     footer
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug

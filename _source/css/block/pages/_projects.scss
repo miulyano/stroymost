@@ -25,7 +25,12 @@
   &_content_heading {
     margin-bottom: 27px;
     font-size: 32px;
+    line-height: 36px;
     font-weight: 400;
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+      line-height: 32px;
+    }
   }
   &_content_item {
     margin-bottom: 24px;
