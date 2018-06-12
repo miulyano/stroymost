@@ -1,1 +1,2 @@
-# stroymost
+`npm install`
+`gulp`
