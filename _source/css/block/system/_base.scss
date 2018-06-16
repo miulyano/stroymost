@@ -13,6 +13,7 @@ html, body {
 
 *:invalid {
   box-shadow: none;
+  outline: none;
 }
 
 a:focus,
