@@ -89,7 +89,7 @@
     color: $-white--color;
     font-weight: bold;
     @include media-breakpoint-down(lg) {
-      margin-right: 60px;
+      margin-right: 56px;
       font-size: 36px;
       line-height: 36px;
     }
@@ -224,6 +224,9 @@
     font-weight: bold;
     line-height: 52px;
     text-shadow: 0 4px 20px rgba(0,0,0,.16);
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
     @include media-breakpoint-down(sm) {
       margin-top: 0;
       font-size: 36px;
@@ -240,6 +243,9 @@
     word-wrap: break-word;
     text-shadow: 0 4px 20px rgba(0,0,0,.3);
     hyphens: auto;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
     @include media-breakpoint-down(sm) {
       font-size: $-default--font_size;
       line-height: 22px;

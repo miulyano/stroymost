@@ -3,10 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  ul {
+  &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    max-width: 296px;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
   }
   button {
     position: relative;
@@ -44,6 +48,7 @@
   }
   &__list_item,
   &__sublist_item {
+    margin: 0;
     position: relative;
   }
   &__list_item::after {
@@ -151,6 +156,10 @@
       min-width: 100%;
     }
   }
+}
+
+.main__section_content_item_text {
+  max-width: 100%;
 }
 
 @keyframes asideView {

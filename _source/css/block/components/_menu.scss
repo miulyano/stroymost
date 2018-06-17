@@ -13,11 +13,13 @@
     top: 0;
     background-color: $-active--color;
     z-index: 1000;
+    overflow-y: auto;
   }
   &__list {
     display: flex;
     list-style: none;
     @include media-breakpoint-down(sm) {
+      width: 100%;
       flex-direction: column;
     }
   }
@@ -29,11 +31,15 @@
     }
     @include media-breakpoint-down(sm) {
       display: flex;
-      line-height: 60px;
+      padding-top: 60px;
+      padding-bottom: 30px;
       align-items: center;
+      justify-content: center;
       .menu__button_close {
+        width: 100%;
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         border: none;
         background-color: rgba(255,255,255,0);
         cursor: pointer;

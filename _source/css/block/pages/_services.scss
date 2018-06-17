@@ -17,6 +17,7 @@
   &__block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     @include media-breakpoint-down(md) {
       flex-direction: column;
       justify-content: flex-start;
@@ -58,20 +59,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 350px;
     max-height: 180px;
     overflow: hidden;
     border-radius: 5px;
     background-color: $-border-light--color;
+    @include media-breakpoint-down(lg) {
+      max-width: 300px;
+    }
     @include media-breakpoint-down(md) {
+      max-width: 100%;
       max-height: 100%;
     }
     img {
+      min-width: 350px;
       min-height: 180px;
       transition: transform .75s ease-in-out;
       @include media-breakpoint-down(lg) {
+        width: 300px;
         object-fit: cover;
       }
       @include media-breakpoint-down(md) {
+        max-width: 100%;
+        height: auto;
         width: 720px;
       }
     }

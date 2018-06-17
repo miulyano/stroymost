@@ -90,6 +90,9 @@
         height: 17px;
       }
     }
+    .drag-container.dropzone-active {
+      background-color: mix($-white--color, $-active--color, 80%);
+    }
     .upload-button {
       flex-grow: 1;
       line-height: 16px;

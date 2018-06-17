@@ -7,11 +7,15 @@
       display: none;
     }
   }
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
   &__block {
     position: relative;
     bottom: -510px;
     padding: 40px;
-    width: 397px;
+    width: auto;
     background-color: $-white--color;
     box-shadow: 0px 16px 28.05px 22.95px rgba(0, 0, 0, 0.1);
     z-index: 500;
@@ -96,6 +100,7 @@
   position: relative;
   margin-bottom: -429px;
   z-index: 10;
+  overflow-y: hidden;
   @include media-breakpoint-down(md) {
     margin-bottom: 0;
   }
