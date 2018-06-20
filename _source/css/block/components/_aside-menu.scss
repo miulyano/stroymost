@@ -158,6 +158,26 @@
   }
 }
 
+.main__section_aside-wrapper {
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 35px;
+  }
+}
+
+.main__aside-certificates {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.mobile__aside-certificates {
+  display: none;
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .main__section_content_item_text {
   max-width: 100%;
 }

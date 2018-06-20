@@ -15,8 +15,8 @@ section.calculator
       span.upload-title
     div.calculator__form_wrapper
       input.calculator__form_item(type="text", name="name", placeholder="Ваше имя" required)
-      input.calculator__form_item(type="tel", id="calculator-tel", name="tel", placeholder="Ваш телефон" required)
+      input.calculator__form_item(type="tel",name="phone", id="calculator-tel", placeholder="Ваш телефон" required)
       input.calculator__form_item(type="email", name="email", placeholder="Ваш Email" required)
-    input.calculator__form_checkbox.visually-hidden(type="checkbox", id="required" checked required)
+    input.calculator__form_checkbox.visually-hidden(type="checkbox", name="compliance", id="required" checked required)
     label.calculator__form_checkbox-label(for="required") Нажимая на кнопку, я даю свое согласие на обработку персональных данных
     button.calculator__form_item.button.button__filled_blue.button-rounded(type="submit") Рассчитать стоимость

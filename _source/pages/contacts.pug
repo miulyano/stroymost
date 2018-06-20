@@ -19,9 +19,9 @@ html(lang='ru')
       div.block-container.form-wrapper
         form.contacts-form(action="#")
           h4.contacts-form__heading Свяжитесь с нами
-          input.contacts-form__item(type="text", placeholder="ФИО", required)
-          input.contacts-form__item#contacts-form-tel(type="tel", placeholder="Телефон", required)
-          textarea.contacts-form__item(rows="5", placeholder="Текст сообщения")
+          input.contacts-form__item(type="text", name="name", placeholder="ФИО", required)
+          input.contacts-form__item#contacts-form-tel(type="tel", name="phone", placeholder="Телефон", required)
+          textarea.contacts-form__item(rows="5", name="comment", placeholder="Текст сообщения")
           button.button.button-radius.button__filled_blue(type="submit") Написать нам
       include ../pages/components/card.pug
       include ../pages/components/footer/footer-other.pug
