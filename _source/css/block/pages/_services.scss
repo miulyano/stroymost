@@ -52,6 +52,9 @@
     color: $-active--color;
     img {
       transform: scale(1.1);
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        transform: scale(1);
+      }
     }
   }
   &__block_item-image {
