@@ -177,6 +177,38 @@ $(function() {
 });
 
 $(function() {
+  $("#certificates-6").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-1").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
+$(function() {
+  $("#certificates-7").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-2").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
+$(function() {
+  $("#certificates-8").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-3").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
+$(function() {
+  $("#certificates-9").click(function(e) {
+    e.preventDefault();
+    $("#modal__certificates-4").addClass('el_flex-active');
+    $("body").addClass('body-hidden');
+  })
+});
+
+$(function() {
   $(".customers-page__block_gratitudes-item").click(function(e) {
     e.preventDefault();
     $("#modal__gratitudes-1").addClass('el_flex-active');
